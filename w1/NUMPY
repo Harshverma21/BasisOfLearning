@@ -1,0 +1,85 @@
+Basics of NumPy Arrays.(FOR MORE YOU CAN EXPLORE:https://www.geeksforgeeks.org/basics-of-numpy-arrays/)
+NumPy stands for Numerical Python. It is a Python library used for working with an array. In Python, we use the list for purpose of the array but it’s slow to process. NumPy array is a powerful N-dimensional array object and its use in linear algebra, Fourier transform, and random number capabilities. It provides an array object much faster than traditional Python lists.
+
+Types of Array:
+ *One Dimensional Array
+ *Multi-Dimensional Array
+ #One Dimensional Array:
+   A one-dimensional array is a type of linear array.
+
+
+One Dimensional Array
+
+Example:
+
+# importing numpy module
+import numpy as np
+ 
+# creating list
+list = [5,6,7,8]
+ 
+# creating numpy array
+sample_array = np.array(list1)
+ 
+print("List in python : ", list)
+ 
+print("Numpy Array in python :",
+      sample_array)
+Output:
+
+List in python :  [5,6,7,8]
+Numpy Array in python :  [5 6 7 8]
+Rank: The rank of an array is simply the number of axes (or dimensions) it has.
+
+The one-dimensional array has rank 1.
+
+
+Rank 1
+
+ 
+
+The two-dimensional array has rank 2.
+
+
+Rank 2
+
+Data type objects (dtype): Data type objects (dtype) is an instance of numpy.dtype class. It describes how the bytes in the fixed-size block of memory corresponding to an array item should be interpreted.
+
+Example:
+
+# Import module
+import numpy as np
+ 
+# Creating the array
+sample_array_1 = np.array([[0, 4, 2]])
+ 
+sample_array_2 = np.array([0.2, 0.4, 2.4])
+ 
+# display data type
+print("Data type of the array 1 :",
+      sample_array_1.dtype)
+ 
+print("Data type of array 2 :",
+      sample_array_2.dtype)
+Output: 
+
+Data type of the array 1 :  int32
+Data type of array 2 :  float64
+
+SOME DIFFERENT WAYS OF CREATING NUMPY ARRAY:
+1. numpy.array(): The Numpy array object in Numpy is called ndarray. We can create ndarray using numpy.array() function.
+
+Syntax: numpy.array(parameter)
+2. numpy.fromiter(): The fromiter() function create a new one-dimensional array from an iterable object.
+
+Syntax: numpy.fromiter(iterable, dtype, count=-1)
+3. numpy.arange(): This is an inbuilt NumPy function that returns evenly spaced values within a given interval.
+
+Syntax: numpy.arange([start, ]stop, [step, ]dtype=None)
+4. numpy.linspace(): This function returns evenly spaced numbers over a specified between two limits. 
+
+Syntax: numpy.linspace(start, stop, num=50, endpoint=True, retstep=False, dtype=None, axis=0)
+5. numpy.empty(): This function create a new array of given shape and type, without initializing value.
+
+Syntax: numpy.empty(shape, dtype=float, order='C')
+

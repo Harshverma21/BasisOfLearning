@@ -1,0 +1,51 @@
+Matplotlib is easy to use and an amazing visualizing library in Python. It is built on NumPy arrays and designed to work with the broader SciPy stack and consists of several plots like line, bar, scatter, histogram, etc. FOR MORE YOU CAN EXPLORE:(https://www.geeksforgeeks.org/matplotlib-tutorial/)
+
+*Before we start learning about Matplotlib we first have to set up the environment and will also see how to use Matplotlib with Jupyter Notebook:
+
+#Pyplot
+Pyplot is a Matplotlib module that provides a MATLAB like interface. Pyplot provides functions that interact with the figure i.e. creates a figure, decorates the plot with labels, creates plotting area in a figure.
+
+ 
+
+Syntax:
+matplotlib.pyplot.plot(*args, scalex=True, scaley=True, data=None, **kwargs)
+
+Matplotlib take care of the creation of inbuilt defaults like Figure and Axes. Don’t worry about these terms we will study about them in detail in the below section but let’s take a brief about these terms.
+
+*Figure: This class is the top-level container for all the plots means it is the overall window or page on which everything is drawn. A figure object can be considered as a box-like container that can hold one or more axes.
+Axes: This class is the most basic and flexible component for creating sub-plots. You might confuse axes as the plural of axis but it is an individual plot or graph. A given figure may contain many axes but a given axes can only be in one figure.
+Figure class
+Figure class is the top-level container that contains one or more axes. It is the overall window or page on which everything is drawn.
+
+Syntax:
+
+class matplotlib.figure.Figure(figsize=None, dpi=None, facecolor=None, edgecolor=None, linewidth=0.0, frameon=None, subplotpars=None, tight_layout=None, constrained_layout=None)
+Axes Class
+Axes class is the most basic and flexible unit for creating sub-plots. A given figure may contain many axes, but a given axes can only be present in one figure. The axes() function creates the axes object. Let’s see the below example.
+
+ 
+
+Syntax:
+
+matplotlib.pyplot.axis(*args, emit=True, **kwargs)
+etting Limits and Tick labels
+You might have seen that Matplotlib automatically sets the values and the markers(points) of the x and y axis, however, it is possible to set the limit and markers manually. set_xlim() and set_ylim() functions are used to set the limits of the x-axis and y-axis respectively. Similarly, set_xticklabels() and set_yticklabels() functions are used to set tick labels.
+
+ Multiple Plots
+Till now you must have got a basic idea about Matplotlib and plotting some simple plots, now what if you want to plot multiple plots in the same figure. This can be done using multiple ways. One way was discussed above using the add_axes() method of the figure class. Let’s see various ways multiple plots can be added with the help of examples.
+
+ 
+
+Method 1: Using the add_axes() method 
+
+ 
+
+The add_axes() method figure module of matplotlib library is used to add an axes to the figure.
+
+ 
+
+Syntax:
+
+ 
+
+add_axes(self, *args, **kwargs)
